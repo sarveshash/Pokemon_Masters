@@ -1,31 +1,23 @@
 import multiprocessing
 import subprocess
 import sys
-import os
 
-def run_python_file(file_path):
-    try:
-        subprocess.run([sys.executable, file_path], check=True)
-    except subprocess.CalledProcessError as e:
-        print(f"Error running {file_path}: {e}")
-        # Log the error here if needed
+def run_python_file(file_name):
+    file_path = f"/root/Pokemon_Masters/{file_name}.py"  # Replace this path accordingly
+    subprocess.run([sys.executable, file_path])
 
 if __name__ == "__main__":
-    # Check if file paths are provided as command-line arguments
-    if len(sys.argv) < 2:
-        print("Usage: python main.py file1.py file2.py file3.py")
-        sys.exit(1)
-
-    # Extract Python files from command-line arguments
-    python_files = sys.argv[1:]
+    # List of Python files to run
+    python_files = [
+        "Start_Command_pm",
+        "Start_Command_group",
+        "Launch"
+    ]
 
     # Create a process for each Python file
     processes = []
-    for file in python_files:
-        if not os.path.exists(file):
-            print(f"File not found: {file}")
-            continue
-        process = multiprocessing.Process(target=run_python_file, args=(file,))
+    for file_name in python_files:
+        process = multiprocessing.Process(target=run_python_file, args=(file_name,))
         processes.append(process)
 
     # Start all processes
