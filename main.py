@@ -10,6 +10,7 @@ if __name__ == "__main__":
         r"https://raw.githubusercontent.com/your-username/Pokemon_Masters/main/Start_Command_pm.py",
         r"https://raw.githubusercontent.com/your-username/Pokemon_Masters/main/Start_Command_group.py",
         r"https://raw.githubusercontent.com/your-username/Pokemon_Masters/main/Launch.py"
+    ]
 
 
     # Create a process for each Python file
