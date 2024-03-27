@@ -7,9 +7,9 @@ def run_python_file(file_path):
 if __name__ == "__main__":
     # List of Python files to run
     python_files = [
-        r"https://raw.githubusercontent.com/your-username/Pokemon_Masters/main/Start_Command_pm.py",
-        r"https://raw.githubusercontent.com/your-username/Pokemon_Masters/main/Start_Command_group.py",
-        r"https://raw.githubusercontent.com/your-username/Pokemon_Masters/main/Launch.py"
+        r"https://raw.githubusercontent.com/sarveshash/Pokemon_Masters/main/Start_Command_pm.py",
+        r"https://raw.githubusercontent.com/sarveshash/Pokemon_Masters/main/Start_Command_group.py",
+        r"https://raw.githubusercontent.com/sarveshash/Pokemon_Masters/main/Launch.py"
     ]
 
 
