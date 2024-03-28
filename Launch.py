@@ -7,7 +7,7 @@ import asyncio
 
 #Initiate the Client
 
-app = Client("Launch", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
+app = Client("xyz", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 
 text = "hi"
 text_button = [
@@ -25,7 +25,7 @@ async def launch(bot,message) :
 
 @app.on_callback_query()
 def callback_query(client, callbackQuery):
-    if CallbackQuery.data == "go_next"
+    if CallbackQuery.data == "go_next":
         await CallbackQuery.edit.message_video(message.chat.id,"BAACAgUAAxkBAAPWZgKNra82bPHl-IL9-4HPcg8uGrkAAqERAAKSdRhUrVsfGHzt9YIeBA")
 
 app.run()
