@@ -3,6 +3,7 @@
 from Bot_Details import *
 from pyrogram import Client, filters
 import asyncio
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup,ReplyKeyboardMarkup,CallbackQuery
 
 
 #Initiate the Client
