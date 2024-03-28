@@ -25,7 +25,7 @@ async def launch(bot,message) :
 
 @app.on_callback_query()
 def callback_query(client, callbackQuery):
-    if CallbackQuer.data == "go_next"
+    if CallbackQuery.data == "go_next"
         await CallbackQuery.edit.message_video(message.chat.id,"BAACAgUAAxkBAAPWZgKNra82bPHl-IL9-4HPcg8uGrkAAqERAAKSdRhUrVsfGHzt9YIeBA")
 
 app.run()
