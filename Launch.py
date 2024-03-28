@@ -9,9 +9,24 @@ import asyncio
 
 app = Client("Launch", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 
+text = "hi"
+text_button = [
+    [
+        InlineButtonKeyboard("next",callback_data= "go_next")
+    ]
+]
+
 @app.on_message(filters.command('launch')&filters.private)
 async def launch(bot,message) :
-    await bot.send_video(message.chat.id,"BAACAgUAAxkBAAPWZgKNra82bPHl-IL9-4HPcg8uGrkAAqERAAKSdRhUrVsfGHzt9YIeBA")
+    await message.reply(
+        text = text,
+        reply_markup = text_button
+    )
+
+@app.on_callback_query()
+def callback_query(client, callbackQuery):
+    if CallbackQuer.data == "go_next"
+        await CallbackQuery.edit.message_video(message.chat.id,"BAACAgUAAxkBAAPWZgKNra82bPHl-IL9-4HPcg8uGrkAAqERAAKSdRhUrVsfGHzt9YIeBA")
 
 app.run()
 
