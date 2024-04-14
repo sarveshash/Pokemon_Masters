@@ -5,7 +5,7 @@ import json
 import asyncio
 
 
-app = Client("trail", api_id=20058505, api_hash="c6416428be72db3174999c1740524b88" bot_token="7017225800:AAH87ICUBwfIEvlyQhOC7jfiRbjtMC5A6wY")
+app = Client("trail", api_id=20058505, api_hash="c6416428be72db3174999c1740524b88", bot_token="7017225800:AAH87ICUBwfIEvlyQhOC7jfiRbjtMC5A6wY")
 
 
 @app.on_message(filters.command("walk"))
