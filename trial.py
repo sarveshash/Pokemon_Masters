@@ -111,7 +111,7 @@ async def character_cards_ball(client, event):
                 await client.edit_message(event.message.chat.id, event.message.message_id, "You used a {} ball. ✧✧".format(a[1].capitalize()))
 
 await asyncio.sleep(2)
-                if rate2 == ["Caught"]:
+                    if rate2 == ["Caught"]:
                     await client.edit_message(event.message.chat.id, event.message.message_id, "You used a {} ball. ✧✧✧".format(a[1].capitalize()))
                     await asyncio.sleep(2)
                     if rate3 == ["Caught"]:
